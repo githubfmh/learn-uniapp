@@ -1,0 +1,90 @@
+uni-app 是一个专门为 vue.js 应用程序开发跨平台框架
+
+enablePullDownRefresh 下拉刷新style设置
+uni.stopPullDownRefresh() 取消下拉刷新
+uni.startPullDownRefresh() 监听下拉刷新方法
+
+onReachBottom 上拉加载的方法
+onReachBottomDistance 距离底部多少触发style设置 值number
+
+网络请求
+uni.request({
+  url,
+  success  
+})
+
+数据缓存
+uni.setStorage 异步 / uni.setStorageSync 同步
+uni.getStorage 异步 / uni.getStorageSync 同步
+uni.removeStorage 异步 / uni.removeStorageSync 同步
+
+图片的上传和预览
+uni.chooseImage
+uni.previewImage
+
+条件编译
+开始 #ifdef H5/MP-WEIXIN/...
+结束 #endif
+
+导航跳转
+navigator
+如果要跳到有tabbar的页面需要加上open-type='switchTab'
+redirect会触发到onUnload生命周期
+uni.navigateTo() 普通的跳转
+uni.switchTab() 跳转到有tabbar的页面
+uni.redirectTo() 跳转并关闭当前页面
+传参 路径?id=80
+接收的话在onLoad的options里接收
+
+父子组件传参方法和vue方法一样
+props/$emit
+
+兄弟传参
+uni.$on
+uni.$emit
+
+内置组件
+text
+selectable
+user-select
+space
+decode
+
+view
+hover-class
+hover-stop-propagation
+hover-start-time
+hover-stay-time
+
+button
+size
+type
+plain
+disabled
+loading
+
+image
+src
+mode
+
+css样式
+rpx
+@import
+不能使用 * 
+支持class、id、element等
+支持字体图标 ~@
+
+事件对象event
+
+APP生命周期
+onLaunch
+onShow
+onHide
+onError
+
+页面生命周期函数
+onLoad
+onShow
+onReady
+onHide
+onUnLoad

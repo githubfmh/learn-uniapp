@@ -1,0 +1,1 @@
+<view><view>{{msg+" Uni"}}</view><block wx:for="{{arr}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><view>{{'姓名: '+item.name+"\n\t\t年龄: "+item.age+"\n\t\t序号: "+item.id+''}}</view></block><button size="mini" data-event-opts="{{[['tap',[['clickHanle',[20,'$event']]]]]}}" bindtap="__e">按钮</button></view>
